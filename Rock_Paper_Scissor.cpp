@@ -25,6 +25,8 @@ int main() {
         else{
             cout<<"Invalid input\n";
         }
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
     userInput--;
     cout<<"You ==> "<<states[userInput]<<" || "<<states[computer]<<" <== Computer \n";
